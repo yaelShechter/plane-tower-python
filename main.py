@@ -71,7 +71,6 @@ while not finish:
                 index_s1, index_s2 = grid.find_good_checker(plane, planes_list)
                 plane.move_plane(index_s1 * CHECKER_SIZE, index_s2 * CHECKER_SIZE)
                 points -= 1
-            print(plane.get_position())
         turns += 1
         for plane in planes_list:
             if len(pygame.sprite.spritecollide(plane, planes_list, False)) != 1:
